@@ -1,0 +1,9 @@
+{
+"host": "localhost",
+"port": 3306,
+"database": "sample_db",
+"username": "root",
+"password": "Ramya@1234",
+"schema": "pubilc"
+
+}

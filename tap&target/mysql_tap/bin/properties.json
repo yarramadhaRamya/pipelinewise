@@ -1,0 +1,72 @@
+{
+    "streams": [
+      {
+        "replication_method": "FULL_TABLE",
+        "replication_key": "id",
+        "key_properties": [
+        "id"
+        ],
+        "tap_stream_id": "sample_db-employee",
+        "table_name": "employee",
+        "schema": {
+          "properties": {
+            "id": {
+              "inclusion": "automatic",
+              "minimum": -2147483648,
+              "maximum": 2147483647,
+              "type": [
+                "null",
+                "integer"
+              ]
+            },
+            "emp_name": {
+              "inclusion": "available",
+              "maxLength": 255,
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          },
+          "type": "object"
+        },
+        "stream": "employee",
+        "metadata": [
+          {
+            "breadcrumb": [],
+            "metadata": {
+              "selected-by-default": false,
+              "database-name": "sample_db",
+              "row-count": 1,
+              "is-view": false,
+              "selected": true,
+              "replication-method": "FULL_TABLE",
+              "table-key-properties": [
+                "id"
+              ]
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "id"
+            ],
+            "metadata": {
+              "selected-by-default": true,
+              "sql-datatype": "int"
+            }
+          },
+          {
+            "breadcrumb": [
+              "properties",
+              "emp_name"
+            ],
+            "metadata": {
+              "selected-by-default": true,
+              "sql-datatype": "varchar(255)"
+            }
+          }
+        ]
+      }
+    ]
+}
